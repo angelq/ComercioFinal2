@@ -32,8 +32,8 @@ public class PrincipalFragment extends ListFragment implements OnClickListener{
 		
 		ArrayList<Comercio> tiendas = new ArrayList<Comercio>();
 		
-		tiendas.add(new Comercio("angel", "seccion1" , "argtend"));
-		tiendas.add(new Comercio("exequiel", "seccion2" , "slogan"));
+		tiendas.add(new Comercio("angel", "Seccion1" , "argtend"));
+		tiendas.add(new Comercio("exequiel", "Seccion2" , "slogan"));
 		
 		ComercioPrincipalAdapter adapter = new ComercioPrincipalAdapter(getActivity(), tiendas);
 		setListAdapter(adapter);

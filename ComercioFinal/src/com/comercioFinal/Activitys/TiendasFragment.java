@@ -29,6 +29,8 @@ public class TiendasFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		
+		//BASE DE DATOS CREO USAR simplecursoradapter
 		tiendas = new ArrayList<Comercio>();
 		
 		tiendas.add(new Comercio("angel", "este es un mensaje"));

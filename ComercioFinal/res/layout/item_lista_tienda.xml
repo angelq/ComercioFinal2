@@ -5,29 +5,36 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:padding="5dp" >
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="80dp"
+            android:background="@color/white" >
 
             <ImageView
                 android:id="@+id/imgbtnSeccionT1"
-                android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="3dp"
                 android:src="@drawable/ic_launcher" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="3dp" >
 
                 <TextView
                     android:id="@+id/txtItemNombreTienda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre:" />
+                    android:text="Nombre:"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txtItemDescripcionTienda"
@@ -39,8 +46,8 @@
                     android:id="@+id/ratingBar2"
                     style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right" />
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|top" />
 
             </LinearLayout>
         </LinearLayout>

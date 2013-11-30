@@ -2,6 +2,11 @@ package com.comercioFinal.Activitys;
 
 import java.util.Locale;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -133,7 +138,7 @@ public class PrincipalActivity extends FragmentActivity implements
 			//args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
 			//fragment.setArguments(args);
 			if(position == 2){
-				fragment = new seccion3();
+				fragment = new MapaFragment();
 			}
 			if(position == 1){
 				fragment = new TiendasFragment();
@@ -203,16 +208,33 @@ public class PrincipalActivity extends FragmentActivity implements
 		public DummySectionFragment() {
 		}
 
+		double longitude;
+		double latitude;
+		private MapView mMapView;
+		private GoogleMap mMap;
+		private Bundle mBundle;
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_principal_dummy,
-					container, false);
-			TextView dummyTextView = (TextView) rootView
-					.findViewById(R.id.section_label);
-			dummyTextView.setText(Integer.toString(getArguments().getInt(
-					ARG_SECTION_NUMBER)));
-			return rootView;
+			View inflatedView = inflater.inflate(R.layout.fragment_mapa, container, false);
+
+			try {
+				MapsInitializer.initialize(getActivity());
+			} catch (GooglePlayServicesNotAvailableException e) {
+				// TODO handle this situation
+			}
+
+			mMapView = (MapView) inflatedView.findViewById(R.id.map);
+			mMapView.onCreate(mBundle);
+
+			return inflatedView;
+		}
+
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			mBundle = savedInstanceState;
 		}
 	}
 
