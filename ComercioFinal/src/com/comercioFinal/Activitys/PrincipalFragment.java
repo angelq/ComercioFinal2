@@ -38,8 +38,6 @@ public class PrincipalFragment extends ListFragment implements OnClickListener{
 		ComercioPrincipalAdapter adapter = new ComercioPrincipalAdapter(getActivity(), tiendas);
 		setListAdapter(adapter);
 		
-		
-		
 	}
 
 	@Override
@@ -47,7 +45,5 @@ public class PrincipalFragment extends ListFragment implements OnClickListener{
 		
 		
 	}
-	
-	
 
 }
