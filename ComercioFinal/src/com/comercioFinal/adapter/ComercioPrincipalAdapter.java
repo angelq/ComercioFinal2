@@ -28,16 +28,17 @@ public class ComercioPrincipalAdapter extends ArrayAdapter<Comercio> {
 		LayoutInflater inflater = activity.getLayoutInflater();
 		View view = inflater.inflate(R.layout.item_seccion_tienda, null);
 		
+		
 		//falta cambiar datos
 		Comercio comercio = getItem(position);
 		
-		TextView txt3 = (TextView) view.findViewById(R.id.txtSeccionTiendas);
+		TextView txt3 = (TextView) view.findViewById(R.id.main_txt_nombre_seccion);
 		txt3.setText(comercio.getSeccion());
 		
-		TextView txt1 = (TextView) view.findViewById(R.id.txtSeccionTiendaNombre);
+		TextView txt1 = (TextView) view.findViewById(R.id.main_txt_nombre_tienda01);
 		txt1.setText(comercio.getNombre());
 		
-		TextView txt2 = (TextView) view.findViewById(R.id.txtSeccionTiendaDescripcion);
+		TextView txt2 = (TextView) view.findViewById(R.id.main_txt_nombre_slogan01);
 		txt2.setText(comercio.getDescripcion());		
 		// TODO Auto-generated method stub
 		//return super.getView(position, convertView, parent);

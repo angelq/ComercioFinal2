@@ -3,9 +3,47 @@
 
     <string name="app_name">ComercioFinal</string>
     <string name="action_settings">Settings</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">DESTACADOS</string>
+    <string name="title_section2">TIENDAS</string>
+    <string name="title_section3">MAPA</string>
+    
     <string name="nombre">Nombre</string>
+    <string name="menu_llamar">Llamar</string>
+    <string name="menu_mensaje">Enviar mensaje</string>
+    <string name="menu_favorito">Añadir a favoritos</string>
+    
+    <string name="main_txt_nombre_seccion">Seccion1</string>
+    <string name="main_btn_vermas">VER MAS</string>
+    <string name="main_txt_nombre_tienda01">TiendaX</string>
+    <string name="main_txt_nombre_slogan01">SloganX</string>
+    <string name="main_txt_nombre_tienda02">TiendaX</string>
+    <string name="main_txt_nombre_slogan02">SloganX</string>
+    <string name="main_txt_nombre_tienda03">TiendaX</string>
+    <string name="main_txt_nombre_slogan03">SloganX</string>
+    <string name="main_txt_nombre_tienda04">TiendaX</string>
+    <string name="main_txt_nombre_slogan04">SloganX</string>
+    <string name="main_txt_nombre_tienda05">TiendaX</string>
+    <string name="main_txt_nombre_slogan05">SloganX</string>
+    
+    <string name="lista_nombre">Tiendax - SloganX</string>
+    <string name="lista_descripcion">Descripcion</string>
+    
+    <string name="tienda_txt_nombre">TiendaX - SloganX</string>
+    <string name="tienda_txt_vistos">Vistos</string>
+    <string name="tienda_btn_puntua">PUNTUA</string>
+    <string name="tienda_txt_galeria">Galeria</string>
+    <string name="tienda_txt_descripcion">Descripcion:</string>
+    <string name="tienda_txt_unaDescripcion">unaDescripcion</string>
+    <string name="tienda_txt_horarioAtencion">Horario de atencion:</string>
+    <string name="tienda_txt_unHorarioAtencion">unHorario</string>
+    <string name="tienda_txt_feriado">Feriados</string>
+    <string name="tienda_txt_unFeriado">unFeriado</string>
+    <string name="tienda_btn_contactar">CONTACTAR</string>
+    <string name="tienda_txt_contactos">Contactos</string>
+    <string name="tienda_txt_telefono">Telefonos:</string>
+    <string name="tienda_txt_email">Email:</string>
+    <string name="tienda_txt_paginaWeb">Pagina web:</string>
+    <string name="tienda_txt_redesSociales">Redes sociales</string>
+    <string name="tienda_txt_cantPersonas">Cantidad de personas han hecho +1</string>
 
 </resources>

@@ -7,313 +7,324 @@
     android:padding="5dp"
     android:weightSum="30" >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/white" >
-
-        <ImageView
-            android:id="@+id/imgbtnSeccionT1"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:src="@drawable/ic_launcher" />
+        android:layout_weight="1" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="3dp" >
-
-            <TextView
-                android:id="@+id/txtItemNombreTienda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textAppearance="?android:attr/textAppearance"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txtItemDescripcionTienda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_horizontal_margin"
-                android:text="Small Text"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
-            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/button1"
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="60dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/black"
-                android:text="PUNTUA"
-                android:textColor="@color/white"
-                android:textSize="10sp" />
-
-            <RatingBar
-                android:id="@+id/ratingBar1"
-                style="?android:attr/ratingBarStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="3dp" >
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Galeria"
-            android:textAppearance="?android:attr/textAppearance"
-            android:textStyle="bold" />
-
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal" >
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/white" >
 
-                <ImageButton
-                    android:id="@+id/imageButton1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/common_signin_btn_icon_dark" />
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:id="@+id/tienda_img"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:src="@drawable/ic_launcher" />
 
-                <ImageButton
-                    android:id="@+id/imageButton3"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:id="@+id/tienda_txt_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tienda_txt_nombre"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tienda_txt_vistos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:text="@string/tienda_txt_vistos"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/common_signin_btn_icon_disabled_dark" />
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
 
-                <ImageButton
-                    android:id="@+id/imageButton4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/common_signin_btn_text_pressed_dark" />
+                    <Button
+                        android:id="@+id/tienda_btn_puntua"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/botonpulsado"
+                        android:text="@string/tienda_btn_puntua"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
 
-                <ImageButton
-                    android:id="@+id/imageButton5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/common_signin_btn_icon_pressed_light" />
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="3dp" >
-
-        <TextView
-            android:id="@+id/txtDescripcionTienda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descripcion:"
-            android:textAppearance="?android:attr/textAppearance"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Una descricion" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/txtHorarioAtencion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Horario de atencion:"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    <RatingBar
+                        android:id="@+id/tienda_ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="3dp" >
 
                 <TextView
-                    android:id="@+id/txtFeriados"
+                    android:id="@+id/tienda_txt_galeria"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Feriados:"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/tienda_txt_galeria"
+                    android:textAppearance="?android:attr/textAppearance"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/txtIndicarFeriados"
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_weight="0" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/tienda_galeria_img01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/common_signin_btn_icon_dark" />
+
+                        <ImageButton
+                            android:id="@+id/tienda_galeria_img02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_launcher" />
+
+                        <ImageButton
+                            android:id="@+id/tienda_galeria_img03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/common_signin_btn_icon_disabled_dark" />
+
+                        <ImageButton
+                            android:id="@+id/tienda_galeria_img04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/common_signin_btn_text_pressed_dark" />
+
+                        <ImageButton
+                            android:id="@+id/tienda_galeria_img05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/common_signin_btn_icon_pressed_light" />
+                    </LinearLayout>
+                </HorizontalScrollView>
             </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="3dp" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="3dp" >
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/tienda_txt_descripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contacto"
+                    android:text="@string/tienda_txt_descripcion"
                     android:textAppearance="?android:attr/textAppearance"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/TextView01"
+                    android:id="@+id/tienda_txt_unaDescripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Small Text"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:text="@string/tienda_txt_unaDescripcion" />
 
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Small Text"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Small Text"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tienda_txt_horarioAtencion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_horarioAtencion"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tienda_txt_unHorarioAtencion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_unHorarioAtencion" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tienda_txt_feriado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_feriado"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tienda_txt_unFeriado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_unFeriado" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:gravity="center_vertical"
-                android:orientation="vertical" >
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:padding="3dp" >
 
-                <Button
-                    android:id="@+id/button2"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="80dp"
-                    android:layout_height="25dp"
-                    android:background="@color/black"
-                    android:text="CONTACTAR"
-                    android:textColor="@color/white"
-                    android:textSize="10sp" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tienda_txt_contactos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_contactos"
+                            android:textAppearance="?android:attr/textAppearance"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tienda_txt_telefono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_telefono"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/tienda_txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_email"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/tienda_txt_paginaWeb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tienda_txt_paginaWeb"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/tienda_btn_contactar"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/botonpulsado"
+                            android:text="@string/tienda_btn_contactar"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:layout_weight="1"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="3dp" >
-
-        <TextView
-            android:id="@+id/txtRedes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Redes sociales"
-            android:textAppearance="?android:attr/textAppearance"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
                 android:background="@color/white"
-                android:src="@drawable/ic_plusone_medium_off_client" />
+                android:orientation="vertical"
+                android:padding="3dp" >
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="cantidad de personas han hecho +1" />
+                <TextView
+                    android:id="@+id/tienda_txt_redesSociales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tienda_txt_redesSociales"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:textStyle="bold" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/tienda_img_google"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_plusone_medium_off_client" />
+
+                    <TextView
+                        android:id="@+id/tienda_txt_cantPersonas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tienda_txt_cantPersonas" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

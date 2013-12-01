@@ -1,57 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="80dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/lista_img"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="3dp"
+        android:src="@drawable/common_signin_btn_text_pressed_light" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="80dp"
+        android:background="@color/white"
         android:orientation="vertical"
-        android:padding="5dp" >
+        android:padding="3dp" >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="80dp"
-            android:background="@color/white" >
+        <TextView
+            android:id="@+id/lista_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_nombre"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imgbtnSeccionT1"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:padding="3dp"
-                android:src="@drawable/ic_launcher" />
+        <TextView
+            android:id="@+id/lista_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lista_descripcion" />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:background="@color/white"
-                android:orientation="vertical"
-                android:padding="3dp" >
-
-                <TextView
-                    android:id="@+id/txtItemNombreTienda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre:"
-                    android:textAppearance="?android:attr/textAppearance"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txtItemDescripcionTienda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Descripcion:" />
-
-                <RatingBar
-                    android:id="@+id/ratingBar2"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="right|top" />
-
-            </LinearLayout>
-        </LinearLayout>
-
+        <RatingBar
+            android:id="@+id/lista_ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|top" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

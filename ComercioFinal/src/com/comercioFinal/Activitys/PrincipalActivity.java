@@ -2,31 +2,18 @@ package com.comercioFinal.Activitys;
 
 import java.util.Locale;
 
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.MapsInitializer;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.FragmentTransaction;
 //OJOimport android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class PrincipalActivity extends FragmentActivity implements
 		ActionBar.TabListener {
@@ -122,16 +109,12 @@ public class PrincipalActivity extends FragmentActivity implements
 			super(fm);
 		}
 
-		
 		@Override
 		public Fragment getItem(int position) {
 			// getItem is called to instantiate the fragment for the given page.
 			// Return a DummySectionFragment (defined as a static inner class
 			// below) with the page number as its lone argument.
-			
-			
-			
-			
+
 			Fragment fragment = new PrincipalFragment();
 			
 			//Bundle args = new Bundle();
@@ -158,11 +141,11 @@ public class PrincipalActivity extends FragmentActivity implements
 			Locale l = Locale.getDefault();
 			switch (position) {
 			case 0:
-				return "Destacados";
+				return getString(R.string.title_section1).toUpperCase(l);
 			case 1:
-				return "Tiendas";
+				return getString(R.string.title_section2).toUpperCase(l);
 			case 2:
-				return "Mapa";
+				return getString(R.string.title_section3).toUpperCase(l);
 			}
 			return null;
 		}

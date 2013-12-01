@@ -1,6 +1,7 @@
 package com.comercioFinal.Activitys;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +43,7 @@ public class MapaFragment extends Fragment {
 		super.onCreate(savedInstanceState);
 		mBundle = savedInstanceState;
 	}
-
+	
 	private void setUpMapIfNeeded(View inflatedView) {
 		if (mMap == null) {
 			mMap = ((MapView) inflatedView.findViewById(R.id.map)).getMap();
@@ -51,6 +52,7 @@ public class MapaFragment extends Fragment {
 			}
 		}
 	}
+	
 
 	private void setUpMap() {
 		mMap.setMyLocationEnabled(true);

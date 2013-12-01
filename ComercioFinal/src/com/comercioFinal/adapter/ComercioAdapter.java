@@ -32,10 +32,10 @@ public class ComercioAdapter extends ArrayAdapter<Comercio>{
 		//falta cambiar datos
 		Comercio comercio = getItem(position);
 		
-		TextView txt1 = (TextView) view.findViewById(R.id.txtItemNombreTienda);
+		TextView txt1 = (TextView) view.findViewById(R.id.lista_nombre);
 		txt1.setText(comercio.getNombre());
 		
-		TextView txt2 = (TextView) view.findViewById(R.id.txtItemDescripcionTienda);
+		TextView txt2 = (TextView) view.findViewById(R.id.lista_descripcion);
 		txt2.setText(comercio.getDescripcion());
 		
 		// TODO Auto-generated method stub
